@@ -1,1 +1,13 @@
+#2025
+# download
+wget https://http.kali.org/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2025.1_all.deb
+
+# install
+sudo dpkg -i kali-archive-keyring_2025.1_all.deb
+
+# remove downloaded file again
+rm kali-archive-keyring_2025.1_all.deb
+sudo nano /etc/apt/sources.list
 deb https://mirrors.ocf.berkeley.edu/kali kali-rolling main non-free contrib
+# try to update again
+sudo apt-get update -y
